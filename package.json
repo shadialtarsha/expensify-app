@@ -41,12 +41,13 @@
         "style-loader": "^0.20.3",
         "webpack": "^4.1.1",
         "webpack-cli": "^2.0.12",
-        "webpack-dev-server": "^3.1.1"
-    },
-    "dependencies": {
+        "webpack-dev-server": "^3.1.1",
         "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "^1.1.1",
         "enzyme-to-json": "^3.3.3",
+        "react-test-renderer": "^16.2.0"
+    },
+    "dependencies": {
         "express": "^4.16.3",
         "moment": "^2.21.0",
         "normalize.css": "^8.0.0",
@@ -57,7 +58,6 @@
         "react-modal": "^3.3.2",
         "react-redux": "^5.0.7",
         "react-router-dom": "^4.2.2",
-        "react-test-renderer": "^16.2.0",
         "redux": "^3.7.2",
         "uuid": "^3.2.1"
     }
