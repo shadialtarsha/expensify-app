@@ -17,11 +17,6 @@ export const Header = props => (
           Create Expense
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/help" activeClassName="is-active">
-          Help
-        </NavLink>
-      </li>
       <button onClick={props.startLogout}>Logout</button>
     </ul>
   </header>

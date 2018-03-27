@@ -25,15 +25,6 @@ exports[`should render Header correctly 1`] = `
         Create Expense
       </NavLink>
     </li>
-    <li>
-      <NavLink
-        activeClassName="is-active"
-        ariaCurrent="true"
-        to="/help"
-      >
-        Help
-      </NavLink>
-    </li>
     <button
       onClick={[Function]}
     >
