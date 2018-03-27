@@ -1,3 +1,4 @@
 node_modules
-config/config.json
 public/dist/
+config.development.env
+config.test.env
