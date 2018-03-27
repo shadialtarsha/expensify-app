@@ -1,4 +1,3 @@
-import moment from 'moment';
 import expensesReducer from '../../reducers/expenses';
 import expenses from '../fixtures/expenses';
 
@@ -61,4 +60,13 @@ test('should not edit expense if id not found', () => {
   };
   const state = expensesReducer(expenses, action);
   expect(state[0].description).not.toBe(updates.description);
+});
+
+test('should set expenses', () => {
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses: [expenses[0]],
+  };
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual([expenses[0]]);
 });
