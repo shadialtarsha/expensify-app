@@ -14,9 +14,11 @@ if (process.env.NODE_ENV === 'test') {
 module.exports = env => {
   const isProduction = env === 'production';
   const CSSExtract = new ExtractTextPlugin('styles.css');
+  const mode = isProduction ? 'production' : 'development';
 
   return {
-    entry: './src/app.js',
+    mode,
+    entry: ['babel-polyfill', './src/app.js'],
     output: {
       path: path.join(__dirname, 'public', 'dist'),
       filename: 'bundle.js',
@@ -46,6 +48,10 @@ module.exports = env => {
               },
             ],
           }),
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          use: ['file-loader'],
         },
       ],
     },
